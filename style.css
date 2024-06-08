@@ -386,8 +386,8 @@ position: absolute;
   /* Expand height on hover */
   animation: none;
   /* animation: expandAnimationReverse 1s ease forwards; Apply reverse animation on hover */
-max-height: 0px;
-transform: scale(1.1);
+  max-height: 0px;
+  transform: scale(1.1);
 }
 .details-container {
   padding: 1.5rem;
@@ -404,8 +404,6 @@ transform: scale(1.1);
   box-shadow: 0 0 0 rgb(74, 56, 137);
   transform: scale(1.1);
   background-color:  rgb(103, 84, 128);
-
-
 }
 .section-container {
   gap: 4rem;
@@ -452,27 +450,34 @@ transform: scale(1.1);
   font-size: 14px;
   /* transition: height 0.01s; */
 }
-/* changes */
-/* .article-container {
-  height: 0; 
-  /* Initial height */
+ .article-container {
+  height: 0; /* Initial height */
    /* Hide overflow content */
-  /* position: absolute; */
-  /* max-height: 0;  Initial height */ 
-  /*overflow: hidden;  Hide overflow content */
-  /* animation: expandAnimation 1s ease forwards;   */
+  position: absolute;
+   max-height: 0; /* Initial height */ 
+  overflow: hidden; /* Hide overflow content */
+  animation: expandAnimation 1s ease forwards;  
   /* Apply animation */ 
-/* } */
+}
 
-/* .article-conatiner:hover {
+ .article-conatiner:hover { 
   height: auto; 
   /* Expand height on hover */
   /* animation: none; */
-  /* animation: expandAnimationReverse 1s ease forwards; Apply reverse animation on hover */
-/* max-height: 280px; */
-/* transform: scale(1.1); */
+  animation: expandAnimationReverse 1s ease forwards; /*Apply reverse animation on hover */
+  max-height: 280px;
+  transform: scale(1.1);
 
-/* }  */
+  height: 40px; 
+  /* Initial height */
+   /* Hide overflow content */
+  position: absolute;
+  max-height: 0; /* Initial height */
+  overflow: hidden; /* Hide overflow content */
+  animation: expandAnimation 1s ease forwards;  
+  /* Apply animation */ 
+
+ }  
 
 
 
@@ -509,34 +514,16 @@ transform: scale(1.1);
   margin-left: 30px;
 
 
-  /* height: -100px;  */
+  height: -100px; 
   /* Initial height */
    /* Hide overflow content */
-  /* position: absolute; */
- /* max-height: 0;  Initial height */
-  /*overflow: hidden;  Hide overflow content */
-  /* animation: expandAnimation 1s ease forwards;   */
+  position: absolute;
+ max-height: 0;  /* Initial height */
+  overflow: hidden;  
+  /* Hide overflow content */
+  animation: expandAnimation 1s ease forwards;  
   /* Apply animation */ 
 }
-
-.article-skills{
-  /* position: absolute; */
-  bottom: 0;
-  left: 0;
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.5s;
-  margin-top: 2000px;
-
-}
-
-
 article {
   display: flex;
   width: 10rem;
